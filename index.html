@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE.CSS">
+    
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script 
+    src="jquerycdn.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".inner-content .content-tab").hide();
+            $(".inner-content .content-tab:first-child").show();
+
+                $("ul.inner-nav li").click(function(){
+                    $("ul.inner-nav li").removeClass("active");
+                    $(this).addClass("active");
+
+                    var current_Tab_value = $(this).attr("data-list");
+                    $(".inner-content .content-tab").hide();
+                    $("."+current_Tab_value).show();
+                
+            });
+            $("header div.menu").click(function(){
+                $("header ul.nav-tab").show;
+            })
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggle">
+        <nav>
+            <div class="brand"><img src="img/IMG_5547.PNG" alt=""></div>
+            
+            <div class="span">
+                <label for="toggle" class="navbar-toggler">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+            </div>
+
+            <ul class="nav-tab">
+                <li class="nav-tab-content"><button type="submit">DOWNLOAD</button></li>
+                <li class="nav-tab-content">CONTACT</li>
+                <li class="nav-tab-content">PRICING</li>
+                <li class="nav-tab-content">GALLERY</li>
+                <li class="nav-tab-content">FEATURES</li>
+                <li class="nav-tab-content">HOME</li>
+                
+                
+                
+            </ul>
+            
+            
+        </nav>
+    </header>
+    <main>
+        <section class="landing">
+            <div class="mobile">
+                <h1>Mobile App</h1>
+            <p>The one and only solution for any kind of mobile app landing needs. Just change the 
+                screenshots and you are good to go.</p>
+            </div>
+            
+            <img class="bg" src="img/IMG_5548.PNG" alt="" srcset="">
+            
+        </section>
+        <section class="features">
+            <div class="icons">
+                <img class="companies" src="img/IMG_5551.PNG" alt="" srcset="">
+            </div>
+            <span>HIGHLIGHTS</span>
+            <h3>Features you love</h3>
+            <div class="cards">
+                <div class="card card1">
+                    <div class="icon"><i class="fa-face-smile"></i></div>
+                    <div class="simple feature">
+                        
+                        <p class="lorem"><h4 class="subheading">simple</h4>Lorem ipsum dolor sit, amet consectetur adipisicing 
+                            elit. Rem iure, velit cumque, esse tenetur ipsa id aliquid dolor eaque quam quae fugiat natus odio commodi 
+                            labore tempora libero rerum error.</p>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <div class="icon"><i class="fa-gear"></i></div>
+                    <div class="customize feature">
+                        
+                        <p class="lorem"><h4 class="subheading">customize</h4>Lorem ipsum dolor sit amet consectetur, 
+                            adipisicing elit. Consequatur velit at dolores voluptates dolorem voluptatem maxime, inventore 
+                            corporis repellendus quo dolor reiciendis quia incidunt possimus mollitia. Veritatis quas molestias quia!</p>
+                    </div>
+                </div>
+                <div class="card card3">
+                    <div class="icon"><i class="fa-lock-keyhole"></i></div>
+                    <div class="secure feature">
+                        
+                        <p class="lorem"><h4 class="subheading">secure</h4>Lorem ipsum, dolor sit amet consectetur 
+                            adipisicing elit. Dignissimos et sequi perspiciatis quibusdam pariatur repellat cupiditate accusantium 
+                            dolores! Minima, at. Tempore, aliquam ipsa libero recusandae cumque ad quisquam iste vero?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="discover">
+      
+                <div class="disc">
+                    <img src="" alt="" srcset="">
+                        <i class ="fa-thin fa-mobile-screen"></i>
+                    <h2>Discover our app</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur hic eaque consectetur quisquam facere ducimus 
+                        voluptatem perspiciatis omnis ipsum dolorem ullam, ipsam vitae illo adipisci earum.</p>
+                    <button>READ MORE</button>
+                </div>
+            
+            
+        </section>
+        <section class="sl">
+            <img class="slant" src="img/IMG_5591.PNG" alt="" srcset="">
+        </section>
+        <section class="features feature2">
+            <span>FEATURES</span>
+            <h3>Do more with our app</h3>
+            <section class="inner-features">
+                <div class="nav">
+                    <ul class="inner-nav">
+                        <li data-list="tab1" class="commune content-tab" >Communication</li>
+                        <li data-list="tab2" class="content-tab">Scheduling</li>
+                        <li data-list="tab3" class="content-tab">Messages</li>
+                        <li data-list="tab4" class="live content-tab">Live Chat</li>
+                    </ul>
+                </div>
+                <div class="inner-content">
+                    <div class="communicate content-tab  tab1">
+                   
+                    
+                        <div class="p p1 ">
+                            <img src="img/IMG_5549.PNG" alt="">
+                            <div>
+                                <h2>communicate with ease</h2>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Rerum fugiat quam veniam accusamus cupiditate iste architecto recusandae</div>
+                            
+                        </div>
+                      
+                    </div>
+                    <div class="scheduling content-tab tab2">
+                        
+                         
+                         <div class="p p2 ">
+                            <div>
+                                <h2>Scheduling when you want</h2>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Rerum fugiat quam veniam accusamus cupiditate iste architecto recusandae</div>
+                            <img src="img/IMG_5549.PNG" alt="" srcset="">
+                         </div>
+                      
+                    </div>
+                    <div class="messages content-tab tab3">
+                       
+                         
+                         <div class="p p3 ">
+                            <img src="img/IMG_5549.PNG" alt="">
+                            <div>
+                                <h2>Realtime Messaging service</h2>
+                                Lorem, ipsum dolor sit amet consectetur 
+                                adipisicing elit. Rerum fugiat quam veniam accusamus cupiditate iste architecto recusandae</div>
+                            
+                         </div>
+                        
+                    </div>
+                    <div class="Live Chat content-tab tab4">
+                        
+                         
+                         <div class="p p3 ">
+                            <div><h2>Live Chat session</h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum obcaecati 
+                            doloribus nihil rem facere odio aut, magnam, aperiam sed, sim</div>
+                            <img src="img/IMG_5549.PNG" alt="">
+                         </div>
+                        
+                    </div>
+                </div>
+                 
+            </section>
+        </section>
+        <section class="launch">
+            
+                <img class="image" src="img/IMG_5550.PNG" alt="">
+           
+            <div class="app">
+                <i class="fa-thin fa-rocket-launch"></i>
+                <div>
+                    <h2>Launch your app</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempora 
+                    provident veniam dolores a, nemo enim, dicta, odio totam quam assumenda consequ
+                </div>
+                <button>Read More</button>
+
+            </div>
+        </section>
+        <section class="features feature3">
+            <div class="steps">
+                <div class="cre">
+                   
+                        <span class="no">1</span>
+                        <div>
+                            <h2>Create an account</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam 
+                                distinctio debitis fuga hic eaque excepturi rerum. Ex incidunt amet</p>
+                        </div>
+                    
+                </div>
+                <div class="cre cre2">
+                    
+                        <span class="no">2</span>
+                        <div>
+                            <h2>Share with friends</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsam 
+                                repudiandae corporis delectus porro a, corrupti quisquam! Nulla</p>
+                        </div>
+                </div>
+                <div class="cre">
+                   
+                        <span class="no">3</span>
+                        <div>
+                            <h2>Enjoy your life</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt 
+                                corrupti veniam qui doloribus maxime similique dolores provident, cum des</p>
+                        </div>
+                </div>
+            </div>
+            
+            <img src="img/IMG_5548.PNG" alt="">
+        </section>
+        <section class="customers">
+            <div class="angle"><i class ="fas fa-angle-left"></i></div>
+            <div class="testimony">
+                <span>TESTIMONIALS</span>
+                <h2>What our Customers Says</h2>
+                <img src="img/IMG_5552.PNG" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deserunt in laborum at! 
+                    Aut, nam. Libero quibusdam sequi quis numquam culpa, voluptatibus delectus excepturi ex.</p>
+            </div>
+            <div class="angle"><i class ="fas fa-angle-right"></i></div>
+        </section>
+        <section class="features feature4">
+            <span>GALLERY</span>
+            <h2>App Screenshots</h2>
+        </section>
+        <section class="features feature5">    
+            
+                <div class="screenshot">
+                    <img class="run run1" src="img/IMG_5545.JPG" alt="">
+                    <img class="run run2" src="img/IMG_5544.JPG" alt="">
+                    <img class="run run3" src="img/IMG_5554.JPG" alt="">
+                </div>
+        
+        </section>
+        <section class="pricing">
+            <span>PRICING</span>
+            <h2>Upgrade to Pro</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card pricing-card1">
+                    <span class="usage">PERSONAL</span>
+                    <h2><strong>$14</strong>/m</h2> 
+                    <p>10 Projects <br>
+                       5GB Storage <br>
+                       Basic Support
+                       Collaboration <br>
+                       Reports and analytics
+                    </p>
+                    <button>CHOOSE THIS PLAN</button>
+                </div>
+                <div class="pricing-card pricing-card1">
+                    <span class="usage">FOR TEAMS</span>
+                    <h2><strong>$29</strong>/m</h2> 
+                    <p>Unlimited Projects <br>
+                       100GB Storage <br>
+                       Priority Support <br>
+                       Collaboration <br>
+                       Reports and analytics
+                       
+                    </p>
+                    <button>CHOOSE THIS PLAN</button>
+                </div>
+                <div class="pricing-card pricing-card1">
+                    <span class="usage">ENTERPRISE</span>
+                    <h2><strong>$249</strong>/m</h2> 
+                    <p>Unlimited Projects <br>
+                       Unlimited Storage <br>
+                       Collaboration <br>
+                       Reports and analytics <br>
+                       Web hooks
+                       
+                    </p>
+                    <button>CHOOSE THIS PLAN</button>
+                </div>
+            </div>
+            <div class="faq-section">
+                <span>FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+                <div class="questions">
+                    <div class="question1 q">
+                        <h4>Can i try before i buy?</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta eligendi voluptates deleniti voluptatem, 
+                            modi temporibus. Accusamus dolorum dicta necessitatibus aliquid!</p>
+                    </div>
+                    <div class="question2 q">
+                        <h4>Can i change my plan later?</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta eligendi voluptates deleniti voluptatem, 
+                            modi temporibus. Accusamus dolorum dicta necessitatibus aliquid!</p>
+                    </div>
+                </div>
+                <div class="questions quest ">
+                    <div class="question3 q">
+                        <h4>What payment methods do you accept?</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta eligendi voluptates deleniti voluptatem, 
+                            modi temporibus. Accusamus dolorum dicta necessitatibus aliquid!</p>
+                    </div>
+                    <div class="question4 q">
+                        <h4>Do you have a contract?</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta eligendi voluptates deleniti voluptatem, modi temporibus. 
+                            Accusamus dolorum dicta necessitatibus aliquid!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <section class="download">
+            <div class="content">
+                <i class="fa fa-mobile"></i>
+
+            <h1>Download Anywhere</h1>
+
+            <p>Availabe to all mobile and desktop platforms. Rapidiously
+                 visualize optimal ROI rather than enterprise-wide methods of empowerment.</p>
+            <div class="buttons">
+                <button class="apple"><img src="img/IMG_5553.PNG" alt=""><p>APPLE STORE</p></button>
+                <button class="play"><img src="img/IMG_5546.PNG" alt=""><p>GOOGLE PLAY</p></button>
+            </div>     
+            </div>
+        </section>
+        <section class="location">
+            <p><i></i>1485 Pacific SI, Brooklyn, NY 11216 USA</p>
+            <p><i></i><a href="">support@moileapp.com</a>  <i></i>518-3636-2800</p>
+        </section>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
